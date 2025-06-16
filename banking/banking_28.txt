@@ -1,0 +1,5 @@
+a = rho a (loan natural join borrower)
+b = rho consumidor <- customer_name (rho b (loan natural join borrower))
+
+pi customer_name (sigma a.customer_name = b.consumidor and a.branch_name ≠ b.branch_name (a x b))
+

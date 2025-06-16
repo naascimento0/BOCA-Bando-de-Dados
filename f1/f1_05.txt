@@ -1,0 +1,3 @@
+participaram = pi forename, surname (drivers natural join (races natural join results))
+todos = pi forename, surname (drivers)
+pi concat(forename, ' ', surname) -> pilotos (todos - participaram)

@@ -1,0 +1,4 @@
+a = pi name -> Equipe, resultId, constructorId (constructors natural join results)
+b = gamma Equipe; count(resultId) -> Aparicoes (a)
+min = gamma min(Aparicoes) -> Aparicoes (b)
+pi Equipe, Aparicoes (b natural join min)

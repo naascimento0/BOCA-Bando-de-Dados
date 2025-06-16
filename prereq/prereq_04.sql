@@ -1,0 +1,1 @@
+SELECT DISTINCT c.course_id FROM course c JOIN prereq p1 ON c.course_id = p1.course_id JOIN prereq p2 ON p1.prereq_id = p2.course_id JOIN course calculo ON p2.prereq_id = calculo.course_id WHERE calculo.title = 'CÁLCULO III'

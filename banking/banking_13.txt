@@ -1,0 +1,3 @@
+a = pi account_number (sigma branch_name like 'Perryridge' (account))
+b = depositor natural join a
+pi customer_name, customer_city (customer natural join b)

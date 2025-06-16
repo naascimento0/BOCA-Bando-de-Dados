@@ -1,0 +1,7 @@
+a = sigma positionOrder = 1 (results)
+b = sigma nationality = 'French' (constructors)
+c = pi constructors.name -> Equipe, driverId, raceId(b left outer join a)
+d = pi Equipe, (forename ||  ' ' || surname) -> Piloto, raceId (c left outer join drivers)
+e = pi Equipe, Piloto, year -> Ano, circuitId (d left outer join races)
+f = pi Equipe, Piloto, Circuito <- name, Ano (e left outer join circuits)
+f

@@ -1,0 +1,8 @@
+a = pi Piloto <- (forename ||  ' ' || surname), points, raceId (drivers natural join results)
+b = pi Piloto, points, year, raceId (a natural join races)
+c = gamma Piloto, year; sum(points) -> soma_de_pontos (b)
+d = gamma year; max(soma_de_pontos) -> max_pontos (c)
+e = pi year -> ano, max_pontos (d)
+f = pi Piloto, year, max_pontos (e join (soma_de_pontos = max_pontos and year = ano) c)
+g = gamma Piloto; count(year) -> qtd_maior_pontuador (f)
+pi Piloto (sigma qtd_maior_pontuador >= 4 (g)) 

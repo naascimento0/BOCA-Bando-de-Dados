@@ -1,0 +1,3 @@
+downtown = sigma branch_name like 'Downtown' (loan)
+qtd = gamma max(amount) -> qtd (downtown)
+pi loan_number (sigma amount <= qtd (loan x qtd))

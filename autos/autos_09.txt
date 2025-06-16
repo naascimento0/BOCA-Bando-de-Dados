@@ -1,0 +1,1 @@
+gamma count(codigo) -> qtd_negocios (negocios)

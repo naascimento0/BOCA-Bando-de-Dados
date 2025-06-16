@@ -1,0 +1,2 @@
+agencias_hayes = pi agencia <- branch_name (sigma customer_name = 'Hayes' (account natural join depositor))
+pi customer_name (sigma branch_name = agencia and customer_name ≠ 'Hayes' (borrower natural join loan x (agencias_hayes)))

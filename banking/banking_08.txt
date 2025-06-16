@@ -1,0 +1,1 @@
+pi customer_name (sigma customer_city like 'P%' or customer_name like '%o%' (customer))

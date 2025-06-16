@@ -1,0 +1,5 @@
+a = pi driverId, raceId (results natural join races)
+b = pi driverId, raceId, concat(forename, ' ', surname) -> Piloto (a natural join drivers)
+c = gamma Piloto; count(raceId) -> Aparicoes (b)
+d = gamma max(Aparicoes) -> Aparicoes (c)
+c natural join d

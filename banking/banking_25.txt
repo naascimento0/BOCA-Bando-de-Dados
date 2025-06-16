@@ -1,0 +1,2 @@
+a = pi agencia <- branch_name (sigma customer_name = 'Hayes' (borrower natural join loan))
+pi customer_name (sigma branch_name = agencia and customer_name ≠ 'Hayes' ((borrower natural join loan) x a))

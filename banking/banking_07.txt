@@ -1,0 +1,2 @@
+pi customer_name (sigma customer_street like '%t' or customer_city like 'S%' (customer))
+

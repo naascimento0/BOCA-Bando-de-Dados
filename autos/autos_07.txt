@@ -1,0 +1,10 @@
+juncao_negocio_consumidor = negocios natural join consumidores
+nome_sobrenome_data_preco = pi nome_c <- nome, sobrenome_c <- sobrenome, cgc, data <- data, preco <-preco, codigo (juncao_negocio_consumidor)
+
+revendedores_cgc_nome = pi cgc, nome_r <- nome (revendedoras)
+juncao_negocios_revendedoras = nome_sobrenome_data_preco natural join revendedores_cgc_nome
+
+automoveis_fabr_modelo = pi fabricante <- fabricante, modelo <- modelo, codigo (automoveis)
+juncao_negocios_automoveis = juncao_negocios_revendedoras natural join automoveis_fabr_modelo
+
+pi nome_c, sobrenome_c, nome_r, fabricante, modelo, data, preco (juncao_negocios_automoveis)

@@ -1,0 +1,5 @@
+brooklyn_branches = sigma (branch_city = 'Brooklyn') (branch)
+max_brooklyn = gamma min(assets) -> max_brooklyn (brooklyn_branches)
+
+cartesian = max_brooklyn x branch
+pi branch_name (sigma assets > max_brooklyn (cartesian))

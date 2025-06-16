@@ -1,0 +1,2 @@
+todos_consumidores = negocios full outer join consumidores
+pi consumidores.nome, consumidores.sobrenome, negocios.cgc (todos_consumidores natural join revendedoras)

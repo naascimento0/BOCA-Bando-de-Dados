@@ -1,0 +1,3 @@
+constructors_nationalities = pi nationality (constructors)
+drivers_nationalities = pi nationality (drivers)
+constructors_nationalities - drivers_nationalities

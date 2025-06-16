@@ -1,0 +1,8 @@
+pilotos = pi driverId, Piloto <- (forename || ' ' || surname), raceId, constructorId (drivers natural join results)
+pilotos_sem_schumacher = sigma Piloto ≠ 'Michael Schumacher' (pilotos) 
+michael = pi driverId -> pilotoId, Piloto -> Michael, raceId -> corridaId, constructorId -> construtorId sigma Piloto = 'Michael Schumacher' (pilotos)
+
+pilotos_correram_com_schumacher = pi Michael, Piloto, constructorId (sigma construtorId = constructorId and corridaId = raceId (pilotos_sem_schumacher x michael))
+
+ferrari = pi constructorId sigma name = 'Ferrari' (constructors)
+pi Piloto (ferrari natural join pilotos_correram_com_schumacher)

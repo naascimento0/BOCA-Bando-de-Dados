@@ -1,0 +1,4 @@
+a =  pi driverId, year (results natural join races)
+b = gamma year; count(driverId) -> qtd_pilotos (a)
+c = gamma avg (qtd_pilotos) -> media (b)
+pi round(media) -> MediaPilotos (c)

@@ -1,0 +1,4 @@
+races_per_year = pi year, raceId (races)
+qtd = gamma year; count(raceId) -> qtdCorridas (races_per_year)
+media = gamma avg(qtdCorridas) -> MediaCorridas (qtd)
+pi round(MediaCorridas) -> MediaCorridas(media)

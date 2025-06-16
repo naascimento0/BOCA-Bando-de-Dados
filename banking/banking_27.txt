@@ -1,0 +1,3 @@
+a = rho a (account natural join depositor)
+b = rho consumidor <- customer_name (rho b (account natural join depositor))
+pi customer_name (sigma a.customer_name = b.consumidor and a.branch_name ≠ b.branch_name (a x b))

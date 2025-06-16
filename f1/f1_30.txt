@@ -1,0 +1,18 @@
+pilotos_id = pi driverId, surname (sigma (forename = 'Ayrton' and surname = 'Senna') or (forename = 'Alain' and surname = 'Prost') or (forename = 'Nigel' and surname = 'Mansell') or (forename = 'Nelson' and surname = 'Piquet') (drivers))
+
+pilotos_vitorias = pi driverId, surname, raceId, positionOrder, gpId (sigma positionOrder = 1 and year = 1986 (results natural join pilotos_id natural join races))
+
+gp_vitorias = pi driverId, surname, name (pilotos_vitorias natural join gps)
+
+senna = tau Senna (pi name -> Senna sigma surname = 'Senna' (gp_vitorias))
+prost = tau Prost (pi name -> Prost sigma surname = 'Prost' (gp_vitorias))
+mansell = tau Mansell (pi name -> Mansell sigma surname = 'Mansell' (gp_vitorias))
+piquet = tau Piquet (pi name -> Piquet sigma surname = 
+'Piquet' (gp_vitorias))
+
+senna_enum = pi rownum() → linha, Senna → Senna (senna)
+prost_enum =  pi rownum() → linha, Prost → Prost(prost)
+mansell_enum = pi rownum() → linha, Mansell → Mansell(mansell)
+piquet_enum = pi rownum() → linha, Piquet → Piquet(piquet)
+
+pi Senna, Prost, Mansell, Piquet (((senna_enum ⟖ prost_enum) ⟖ mansell_enum) ⟕ piquet_enum)

@@ -1,0 +1,1 @@
+pi branch_name, branch_city (sigma customer_name like 'Smith' (borrower natural join (loan natural join branch)))

@@ -1,0 +1,1 @@
+pi name (sigma races.gpId like 'null' (gps full outer join races))

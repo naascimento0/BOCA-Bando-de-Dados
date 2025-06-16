@@ -1,0 +1,4 @@
+a = pi constructorId, year (results natural join races)
+b = gamma year; count(constructorId) -> qtd_construtores (a)
+c = gamma avg(qtd_construtores) -> media (b)
+pi round(media) -> MediaEquipes (c)

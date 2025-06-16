@@ -1,0 +1,3 @@
+consumidores_que_fizeram_negocios = consumidores natural join negocios
+todos_consumidores = consumidores left outer join negocios
+pi consumidores.* (todos_consumidores - consumidores_que_fizeram_negocios)

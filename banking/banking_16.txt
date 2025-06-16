@@ -1,0 +1,2 @@
+a = branch natural join account
+pi branch_name, branch_city (sigma customer_name like 'Hayes' (depositor natural join a))

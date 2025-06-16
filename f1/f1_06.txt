@@ -1,0 +1,5 @@
+results_constructors = results natural join constructors
+top3_results = sigma positionOrder <= 3 (results_constructors)
+teams_with_top3 = pi name (top3_results)
+all_teams = pi name (constructors)
+all_teams - teams_with_top3

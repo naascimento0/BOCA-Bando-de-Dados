@@ -1,0 +1,3 @@
+a = borrower natural join loan
+b = customer natural join a
+pi customer_name, customer_city (sigma branch_name like 'Perryridge' (b))

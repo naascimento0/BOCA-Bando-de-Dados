@@ -1,0 +1,3 @@
+a = borrower natural join (loan natural join branch)
+b = depositor natural join (account natural join branch)
+pi branch_name, branch_city (a natural join b)

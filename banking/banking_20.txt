@@ -1,0 +1,4 @@
+north_town = sigma branch_name like 'North Town' (account)
+max_northtown = gamma max(balance) -> max_northtown (north_town)
+
+pi account_number (sigma balance < max_northtown (account x max_northtown))

@@ -1,0 +1,7 @@
+revendedoras_que_possuem_negocio = revendedoras natural join negocios
+
+cpf_cgc = pi cpf, cgc (revendedoras_que_possuem_negocio)
+
+consumidor_que_fez_negocios_com_revendedoras = cpf_cgc natural join consumidores
+
+pi nome, sobrenome, cgc (consumidor_que_fez_negocios_com_revendedoras)

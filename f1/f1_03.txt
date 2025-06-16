@@ -1,0 +1,1 @@
+pi name (sigma races.circuitId like 'null' (circuits full outer join races))

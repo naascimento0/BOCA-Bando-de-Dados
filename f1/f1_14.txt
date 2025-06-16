@@ -1,0 +1,4 @@
+a = pi raceId, circuitId, name (circuits natural join races)
+b = gamma name; count(*) -> qtd (a)
+c = gamma max(qtd) -> qtd (b)
+pi name (b natural join c)

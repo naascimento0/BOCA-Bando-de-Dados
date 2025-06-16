@@ -1,0 +1,3 @@
+revendedoras_com_negocio = revendedoras natural join negocios
+todas_revendedoras = revendedoras left outer join negocios
+pi revendedoras.* (todas_revendedoras - revendedoras_com_negocio)

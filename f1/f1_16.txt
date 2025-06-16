@@ -1,0 +1,4 @@
+a = pi year -> Temporada, raceId (races natural join seasons)
+b = gamma Temporada; count(raceId) -> Corridas (a)
+c = gamma max(Corridas) -> Corridas (b)
+pi Temporada, Corridas (c natural join b)

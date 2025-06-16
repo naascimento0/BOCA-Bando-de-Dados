@@ -1,0 +1,3 @@
+agencias = pi agencia <- branch_name (sigma customer_name = 'Hayes' (account natural join depositor))
+tudo = customer natural join (account natural join depositor)
+pi customer_name (sigma branch_name = agencia and customer_name ≠ 'Hayes' (tudo x agencias))
